@@ -1,0 +1,12 @@
+:root {
+    --header-text-color: rgb(157, 157, 157);
+    --header-hover-color: rgb(255, 255, 255);
+    --header-background-color: rgb(34, 34, 34);
+    --header-border-color: rgb(16, 16, 16);
+    --header-selected-color: rgb(8, 8, 8);
+    --header-popup-color: rgb(38, 38, 38);
+
+    --hero-text-color: rgb(173, 255, 47);
+
+    --main-text-color: rgb(149, 149, 149);
+}
