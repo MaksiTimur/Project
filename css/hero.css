@@ -27,7 +27,7 @@
 
 .hero-button {
     background: rgb(51, 122, 183);
-    border: 1px solid rgb(46, 109, 164);
+    border: var(--default-border-style) rgb(46, 109, 164);
     border-radius: 4px;
     color: white;
     font-size: 14px;
