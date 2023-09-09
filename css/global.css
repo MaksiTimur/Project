@@ -1,3 +1,7 @@
+:root {
+    --default-border-style: 1px solid;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -7,12 +11,13 @@
 .layout {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
 
 .wrapper {
     max-width: 1170px;
-    padding: 0 15px;
+    min-width: 500px;
+    padding: 0 var(--wrapper-side-padding);
     width: 100%;
     margin: 0 auto;
 }
@@ -20,4 +25,12 @@
 .button,
 .search-box__field {
     padding: 6px 12px;
+}
+
+@media screen and (max-width: 800px) {
+    .hero-wrapper,
+    .features-wrapper,
+    .team-wrapper {
+        max-width: var(--mobile-wrapper-size);
+    }
 }
