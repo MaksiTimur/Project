@@ -6,6 +6,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 20px;
+    appearance: none;
 }
 
 .layout {
@@ -25,12 +26,33 @@
 .button,
 .search-box__field {
     padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--header-hamburger-color);
+    background: white;
+    border: var(--default-border-style) rgb(204, 204, 204);
+}
+
+.button:hover {
+    background: rgb(230, 230, 230);
+    border-color: rgb(173, 173, 173);
+}
+
+.button:focus {
+    background: rgb(212, 212, 212);
+    border-color: rgb(140, 140, 140);
+    box-shadow: rgba(0, 0, 0, 0.125) 0px 3px 5px 0px inset;
 }
 
 @media screen and (max-width: 800px) {
     .hero-wrapper,
     .features-wrapper,
-    .team-wrapper {
+    .team-wrapper,
+    .footer-wrapper {
         max-width: var(--mobile-wrapper-size);
     }
 }

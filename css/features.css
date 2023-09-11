@@ -25,6 +25,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px;
+    width: 33.33333333%;
 }
 
 .features-card__title {
@@ -44,7 +46,7 @@
     width: 100%;
     height: var(--features-image-height);
     max-width: var(--features-image-width);
-    background-image: url(../img/feature-1.jpeg);
+    background-image: url(../img/feature-1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

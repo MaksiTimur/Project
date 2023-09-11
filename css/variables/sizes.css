@@ -1,6 +1,7 @@
 :root {
     --features-image-height: 300px;
     --features-image-width: 700px;
+    --team-image-size: 100px;
     --wrapper-side-padding: 15px;
     --mobile-wrapper-size: calc(var(--features-image-width) + var(--wrapper-side-padding) * 2);
 }

@@ -1,4 +1,4 @@
-header {
+.header-section {
     background: var(--header-background-color);
     border-bottom: var(--default-border-style) var(--header-selected-color);
 
@@ -21,11 +21,6 @@ header {
     display: flex;
     align-items: center;
     color: var(--header-text-color);
-}
-
-.popup {
-    position: relative;
-    cursor: pointer;
 }
 
 .popup:hover {
@@ -157,11 +152,9 @@ header {
 
 .actucal-page {
     background: var(--header-selected-color);
-    color: var(--header-hover-color);
 }
 
 .actucal-page > .header-text {
-    background: var(--header-selected-color);
     color: var(--header-hover-color);
 }
 
@@ -174,12 +167,10 @@ header {
 
 .search-box > [class^=search] {
     border: var(--default-border-style) rgb(204, 204, 204);
-    border-radius: 4px;
 }
 
 .search-box__field {
     width: 217px;
-    appearance: none;
 }
 
 .search-box__field:focus {
@@ -188,24 +179,6 @@ header {
         rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset,
         rgba(102, 175, 233, 0.586) 0px 0px 7.81314px 0px;
     border-color: rgb(102, 175, 233);
-}
-
-.search-box__button {
-    background: white;
-    color: rgb(51, 51, 51);
-    font-size: 14px;
-    cursor: pointer;
-    appearance: none;
-}
-
-.search-box__button:hover {
-    background: rgb(230, 230, 230);
-    border-color: rgb(173, 173, 173);
-}
-
-.search-box__button:focus {
-    background: rgb(212, 212, 212);
-    border-color: rgb(140, 140, 140);
 }
 
 .hamburger:hover .hamburger-nav,
@@ -226,7 +199,6 @@ header {
     margin-left: auto;
     margin-right: 0;
     border: var(--default-border-style) var(--header-hamburger-color);
-    border-radius: 4px;
     margin-top: 8px;
     margin-bottom: 8px;
     

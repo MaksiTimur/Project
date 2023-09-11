@@ -16,7 +16,6 @@
     line-height: 69.3px;
 }
 
-
 .hero-text {
     color: var(--hero-text-color);
     margin-bottom: 15px;
@@ -41,6 +40,5 @@
 
 .hero-button:focus {
     background: rgb(40, 96, 144);
-    box-shadow: rgba(0, 0, 0, 0.125) 0px 3px 5px 0px inset;
     border-color: rgb(18, 43, 64);
 }
