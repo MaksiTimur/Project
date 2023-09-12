@@ -42,3 +42,13 @@
     background: rgb(40, 96, 144);
     border-color: rgb(18, 43, 64);
 }
+
+@media screen and (max-width: 800px) {
+    .hero-section {
+        padding: 30px 0;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+}
