@@ -48,6 +48,9 @@
     }
 
     .team-card {
+        width: 100%;
         max-width: 700px;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
