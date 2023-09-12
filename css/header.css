@@ -23,13 +23,22 @@
     color: var(--header-text-color);
 }
 
-.popup:hover {
-    background: var(--header-selected-color);
+.popup {
+    position: relative;
+    cursor: pointer;
+}
+
+.popup > span {
+    font-size: 14px;
 }
 
 .popup:hover > .header-popup,
 .popup:hover > .header-popup__mobile {
     display: block;
+}
+
+.popup:hover {
+    background: var(--header-selected-color);
 }
 
 .header-popup__mobile {
@@ -54,21 +63,22 @@
     color: var(--header-hover-color);
 }
 
-.popup {
-    position: relative;
-    cursor: pointer;
+.popup-mobile__searchbox {
+    display: flex;
+    padding: 10px var(--wrapper-side-padding);
+    flex-wrap: wrap;
+    gap: 5px;
+    border-top: var(--default-border-style) var(--header-selected-color);
+    border-bottom: var(--default-border-style) var(--header-selected-color);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 0px 0px;
 }
 
-.popup > span {
-    font-size: 14px;
+.popup-mobile__searchbox:hover {
+    cursor: default;
 }
 
-.popup:hover {
-    background: var(--header-selected-color);
-}
-
-.popup:hover > .header-popup {
-    display: block;
+.popup-mobile__searchbox .searchbox__field {
+    width: 100%;
 }
 
 .header-popup {
@@ -166,15 +176,15 @@
     margin-left: auto;
 }
 
-.search-box > [class^=search] {
+.searchbox > [class^=search] {
     border: var(--default-border-style) rgb(204, 204, 204);
 }
 
-.search-box__field {
+.searchbox__field {
     width: 217px;
 }
 
-.search-box__field:focus {
+.searchbox__field:focus {
     outline: none;
     box-shadow:
         rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset,
@@ -192,14 +202,15 @@
 }
 
 .hamburger {
-    width: 44px;
-    height: 34px;
+    width: var(--header-hamburger-width);
+    height: var(--header-hamburger-height);
     padding: 9px 10px;
     cursor: pointer;
     position: relative;
     margin-left: auto;
     margin-right: 0;
     border: var(--default-border-style) var(--header-hamburger-color);
+    border-radius: var(--default-border-radius);
     margin-top: 8px;
     margin-bottom: 8px;
     
@@ -236,14 +247,15 @@
 
 .hamburger-nav {
     display: none;
+    background: var(--header-background-color);
     position: absolute;
     right: calc((-1 * var(--wrapper-side-padding)) - 1px);
     top: 41px;
     width: 100vw;
+    padding-bottom: 10px;
 }
 
 .hamburger-list {
-    background: var(--header-background-color);
     padding: 10px 0;
     list-style: none;
     border-top: var(--default-border-style) var(--header-border-color);
@@ -256,7 +268,7 @@
 }
 
 .hamburger-link {
-    padding: 10px 15px;
+    padding: 10px var(--wrapper-side-padding);
 }
 
 @media screen and (max-width: 800px) {
