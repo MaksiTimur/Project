@@ -6,6 +6,7 @@
 * {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    font-size: 14px;
     line-height: 20px;
     appearance: none;
 }
@@ -32,7 +33,6 @@
 
 .button {
     cursor: pointer;
-    font-size: 14px;
     color: var(--header-hamburger-color);
     background: white;
     border: var(--default-border-style) rgb(204, 204, 204);
