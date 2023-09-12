@@ -260,6 +260,7 @@
 }
 
 @media screen and (max-width: 800px) {
+    
     .nav__list,
     .search-form {
         display: none;
