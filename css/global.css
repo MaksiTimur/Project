@@ -1,6 +1,5 @@
 :root {
     --default-border-style: 1px solid;
-    --default-border-radius: 4px;
 }
 
 * {
@@ -25,9 +24,9 @@
 }
 
 .button,
-.searchbox__field {
+.search-box__field {
     padding: 6px 12px;
-    border-radius: var(--default-border-radius);
+    border-radius: 4px;
 }
 
 .button {

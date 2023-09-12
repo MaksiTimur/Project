@@ -54,25 +54,6 @@
     color: var(--header-hover-color);
 }
 
-.popup-mobile__searchbox {
-    display: flex;
-    padding: 10px var(--wrapper-side-padding);
-    flex-wrap: wrap;
-    gap: 5px;
-    border-top: var(--default-border-style) var(--header-selected-color);
-    border-bottom: var(--default-border-style) var(--header-selected-color);
-    /* margin: 8px 0; */
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 0px 0px;
-}
-
-.popup-mobile__searchbox:hover {
-    cursor: default;
-}
-
-.popup-mobile__searchbox .searchbox__field {
-    width: 100%;
-}
-
 .popup {
     position: relative;
     cursor: pointer;
@@ -185,15 +166,15 @@
     margin-left: auto;
 }
 
-.searchbox > [class^=search] {
+.search-box > [class^=search] {
     border: var(--default-border-style) rgb(204, 204, 204);
 }
 
-.searchbox__field {
+.search-box__field {
     width: 217px;
 }
 
-.searchbox__field:focus {
+.search-box__field:focus {
     outline: none;
     box-shadow:
         rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset,
@@ -211,15 +192,14 @@
 }
 
 .hamburger {
-    width: var(--header-hamburger-width);
-    height: var(--header-hamburger-height);
+    width: 44px;
+    height: 34px;
     padding: 9px 10px;
     cursor: pointer;
     position: relative;
     margin-left: auto;
     margin-right: 0;
     border: var(--default-border-style) var(--header-hamburger-color);
-    border-radius: var(--default-border-radius);
     margin-top: 8px;
     margin-bottom: 8px;
     
@@ -255,17 +235,15 @@
 }
 
 .hamburger-nav {
-    background: var(--header-background-color);
     display: none;
     position: absolute;
-    cursor: default;
     right: calc((-1 * var(--wrapper-side-padding)) - 1px);
     top: 41px;
     width: 100vw;
-    padding-bottom: 10px;
 }
 
 .hamburger-list {
+    background: var(--header-background-color);
     padding: 10px 0;
     list-style: none;
     border-top: var(--default-border-style) var(--header-border-color);
@@ -278,7 +256,7 @@
 }
 
 .hamburger-link {
-    padding: 10px var(--wrapper-side-padding);
+    padding: 10px 15px;
 }
 
 @media screen and (max-width: 800px) {
