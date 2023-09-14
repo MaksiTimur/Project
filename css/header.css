@@ -29,11 +29,14 @@
 }
 
 .popup:hover > .header-popup,
-.popup:hover > .header-popup__mobile {
+.popup:hover > .header-popup__mobile,
+.popup:focus > .header-popup,
+.popup:focus > .header-popup__mobile {
     display: block;
 }
 
-.popup:hover {
+.popup:hover,
+.popup:focus {
     background: var(--header-selected-color);
 }
 
@@ -44,7 +47,8 @@
     background: var(--header-background-color);
 }
 
-.popup-mobile:hover .hamburger-link {
+.popup-mobile:hover .hamburger-link,
+.popup-mobile:focus .hamburger-link {
     background: var(--header-selected-color);
     color: var(--header-hover-color);
 }
@@ -53,7 +57,8 @@
     background: none;
 }
 
-.popup-mobile__item:hover {
+.popup-mobile__item:hover,
+.popup-mobile__item:focus {
     background: none;
     color: var(--header-hover-color);
 }
@@ -68,7 +73,8 @@
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 0px 0px;
 }
 
-.popup-mobile__searchbox:hover {
+.popup-mobile__searchbox:hover,
+.popup-mobile__searchbox:focus {
     cursor: default;
 }
 
@@ -93,7 +99,7 @@
 }
 
 .header-popup__item {
-    white-space: nowrap;
+    width: max-content;
     color: var(--header-popup-color);
 }
 
@@ -104,7 +110,8 @@
     color: var(--header-popup-color);
 }
 
-.header-popup__link:hover {
+.header-popup__link:hover,
+.header-popup__link:focus {
     background: rgb(245, 245, 245);
 }
 
@@ -128,7 +135,9 @@
 }
 
 .header-link:hover .header-logo__text,
-.header-link:hover .header-logo__img {
+.header-link:hover .header-logo__img,
+.header-link:focus .header-logo__text,
+.header-link:focus .header-logo__img {
     color: var(--header-hover-color);
 }
 
@@ -141,7 +150,8 @@
     margin-right: 15px;
 }
 
-.header-logo:hover {
+.header-logo:hover,
+.header-logo:focus {
     color: var(--header-hover-color);
 }
 
@@ -155,11 +165,11 @@
     color: var(--header-text-color);
 }
 
-.actucal-page {
+.actual-page {
     background: var(--header-selected-color);
 }
 
-.actucal-page > .header-text {
+.actual-page > .header-text {
     color: var(--header-hover-color);
 }
 
@@ -187,11 +197,14 @@
 }
 
 .hamburger:hover .hamburger-nav,
-.hamburger:hover .hamburger-addition-zone {
+.hamburger:hover .hamburger-addition-zone,
+.hamburger:focus .hamburger-nav,
+.hamburger:focus .hamburger-addition-zone {
     display: block;
 }
 
-.hamburger:hover {
+.hamburger:hover,
+.hamburger:focus {
     background: var(--header-hamburger-color);
 }
 
