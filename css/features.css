@@ -30,11 +30,10 @@
 }
 
 .features-card__title {
-    color: rgb(51, 122, 183)
+    color: rgb(51, 122, 183);
 }
 
 .features-card__link {
-    color: rgb(51, 122, 183);
     font-size: 24px;
 }
 
