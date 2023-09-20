@@ -99,7 +99,7 @@
 }
 
 .header-popup__item {
-    width: max-content;
+    white-space: nowrap;
     color: var(--header-popup-color);
 }
 
