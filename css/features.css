@@ -1,66 +1,55 @@
 .features-title {
-    font-size: 36px;
-    line-height: 39.6px;
-    margin-top: 0;
+  font-size: 36px;
+  line-height: 39.6px;
+  margin-top: 0;
 }
-
 .features-title small {
-    color: rgb(119, 119, 119);
-    font-size: 23.4px;
-    line-height: 23.4px;
+  color: #777777;
+  font-size: 23.4px;
+  line-height: 23.4px;
 }
-
 .features-cards {
-    display: flex;
-    gap: 30px;
-    width: 100%;
+  display: flex;
+  gap: 30px;
+  width: 100%;
 }
-
 .features-text {
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
-
 .features-card {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 33.33333333%;
+}
+.features-card__title {
+  color: #337ab7;
+}
+.features-card__link {
+  font-size: 24px;
+}
+.features-card__link:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+.features-card__img {
+  width: 100%;
+  height: var(--features-image-height);
+  max-width: var(--features-image-width);
+  background-image: url(../img/feature-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 800px) {
+  .features-cards {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
-    width: 33.33333333%;
-}
-
-.features-card__title {
-    color: rgb(51, 122, 183);
-}
-
-.features-card__link {
-    font-size: 24px;
-}
-
-.features-card__link:hover {
-    color: rgb(35, 82, 124);
-    text-decoration: underline;
-}
-
-.features-card__img {
+  }
+  .features-card {
     width: 100%;
-    height: var(--features-image-height);
-    max-width: var(--features-image-width);
-    background-image: url(../img/feature-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-@media screen and (max-width: 800px) {
-    
-    .features-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .features-card {
-        width: 100%;
-        max-width: 700px;
-    }
+    max-width: 700px;
+  }
 }

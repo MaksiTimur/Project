@@ -1,61 +1,52 @@
 :root {
-    --default-border-style: 1px solid;
-    --default-border-radius: 4px;
-    --default-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px;
+  --default-border-style: 1px solid;
+  --default-border-radius: 4px;
+  --default-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px;
 }
-
 * {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    appearance: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  appearance: none;
 }
-
 .layout {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
-
 .wrapper {
-    max-width: 1170px;
-    min-width: 500px;
-    padding: 0 var(--wrapper-side-padding);
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1170px;
+  min-width: 500px;
+  padding: 0 var(--wrapper-side-padding);
+  width: 100%;
+  margin: 0 auto;
 }
-
 .button,
 .searchbox__field {
-    padding: 6px 12px;
-    border-radius: var(--default-border-radius);
+  padding: 6px 12px;
+  border-radius: var(--default-border-radius);
 }
-
 .button {
-    cursor: pointer;
-    color: var(--header-hamburger-color);
-    background: white;
-    border: var(--default-border-style) rgb(204, 204, 204);
+  cursor: pointer;
+  color: var(--header-hamburger-color);
+  background: white;
+  border: var(--default-border-style) #cccccc;
 }
-
 .button:hover {
-    background: rgb(230, 230, 230);
-    border-color: rgb(173, 173, 173);
+  background: #e6e6e6;
+  border-color: #adadad;
 }
-
 .button:focus {
-    background: rgb(212, 212, 212);
-    border-color: rgb(140, 140, 140);
-    box-shadow: rgba(0, 0, 0, 0.125) 0px 3px 5px 0px inset;
+  background: #d4d4d4;
+  border-color: #8c8c8c;
+  box-shadow: rgba(0, 0, 0, 0.125) 0px 3px 5px 0px inset;
 }
-
 @media screen and (max-width: 800px) {
-    
-    .hero-wrapper,
-    .features-wrapper,
-    .team-wrapper,
-    .footer-wrapper {
-        max-width: var(--mobile-wrapper-size);
-    }
+  .hero-wrapper,
+  .features-wrapper,
+  .team-wrapper,
+  .footer-wrapper {
+    max-width: var(--mobile-wrapper-size);
+  }
 }
